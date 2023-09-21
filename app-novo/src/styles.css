@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    min-height: 100vh;
+    margin: 0; /* Remova as margens padrão do corpo */
+    display: flex; /* Use flexbox para esticar o corpo */
+    flex-direction: column; /* Alinhe o conteúdo verticalmente */
+    background-color: #272829;
+  }
+
+  .slick-slider {
+    width: 88%;
+    margin: auto;
+    background: rgb(14, 13, 13);
+  }
+    
+body .slick-prev, 
+body .slick-next {
+    height: 45px;
+    width: 40px;
+    background: #575d59 !important;
+    z-index: 100;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

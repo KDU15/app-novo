@@ -1,0 +1,88 @@
+<header class="header">
+    <div class="d-flex align-items-center header-lado-esquerdo">
+      <span class="logo">
+        <h3>MangaVerse</h3>
+      </span>
+      <ul class="ul-lista-nav">
+        <li class="li-lista-nav">
+          <div ngbDropdown class="d-inline-block">
+            <a class="navegar-link" id="dropdownBasic1" ngbDropdownToggle><ng-icon class="icon-nav" name="bootstrapList"></ng-icon> <span class="ms-2 name-list-nav">Navegar</span></a>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="custom-dropdown-menu">
+              <div class="content-menu-dropdown">
+                <div class="dropdown-menu-left">
+                  <a href="#" class="item-dropdown" ngbDropdownItem>Populares</a>
+                  <a href="#" class="item-dropdown" ngbDropdownItem>Novidades</a>
+                  <a href="#" class="item-dropdown" ngbDropdownItem>Ordem Alfabetica</a>
+                </div>
+                <div class="dropdown-menu-right">
+                  <div class="generos-div">
+                    <h5>Gêneros</h5>
+                    <div class="todas-listas">
+                      <div class="lista-generos">
+                          <ul>
+                              <li><a href="#" class="item-dropdown">Ação</a></li>
+                              <li><a href="#" class="item-dropdown">Aventura</a></li>
+                              <li><a href="#" class="item-dropdown">Comédia</a></li>
+                              <li><a href="#" class="item-dropdown">Drama</a></li>
+                          </ul>
+                      </div>
+                      <div class="lista-generos">
+                          <ul>
+                              <li><a href="#" class="item-dropdown">Fantasia</a></li>
+                              <li><a href="#" class="item-dropdown">Ficção Científica</a></li>
+                              <li><a href="#" class="item-dropdown">Romance</a></li>
+                              <li><a href="#" class="item-dropdown">Terror</a></li>
+                          </ul>
+                      </div>
+                      <div class="lista-generos">
+                          <ul>
+                              <li><a href="#" class="item-dropdown">Mistério</a></li>
+                              <li><a href="#" class="item-dropdown">Esporte</a></li>
+                              <li><a href="#" class="item-dropdown">Histórico</a></li>
+                              <li><a href="#" class="item-dropdown">Slice of Life</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="name-list-forum"><a href="">Forum</a></li>
+      </ul>
+    </div>
+    <div class="header-lado-direito">
+      <div class="d-flex align-items-center content-nav-lado-direito">
+        <div class="content-pesquisa">
+          <div class="js_input_pesquisa" style="display: none; width: 100%;">
+            <div class="input-pesquisa">
+              <input id="input-pesqusa-manga" type="text">
+            </div>
+          </div>
+          <a class="me-5 botao-pesquisar js_botao_pesquisar js_input_fechado" href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+        <div ngbDropdown class="d-inline-block dropdown-user">
+          <a class="user-link" id="dropdownBasic2" ngbDropdownToggle>
+            <ng-icon name="bootstrapPersonCircle"></ng-icon>
+        </a>
+        <div class="content-menu-user" ngbDropdownMenu aria-labelledby="dropdownBasic2" >
+            <a href="#" class="item-dropdown" ngbDropdownItem>
+                <ng-icon name="bootstrapBookmarkFill"></ng-icon>
+                <span class="ms-2">Favoritos</span>
+            </a>
+            <a href="#" class="item-dropdown" ngbDropdownItem>
+                <ng-icon name="bootstrapPersonVcard"></ng-icon>
+                <span class="ms-2">Minha Conta</span>
+            </a>
+            <a href="#" class="item-dropdown" ngbDropdownItem>
+                <ng-icon name="bootstrapBoxArrowRight"></ng-icon>
+                <span class="ms-2">Logout</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>

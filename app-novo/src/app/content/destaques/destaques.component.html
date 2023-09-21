@@ -1,0 +1,17 @@
+<div class="card-container pb-4">
+    <div class="card" *ngFor="let jogo of dadosDosCartoes.slice(pageIndex * pageSize, (pageIndex + 1) * pageSize)">
+        <div class="image-card">
+          <img [src]="jogo.imagemUrl" alt="{{ jogo.titulo }}">
+        </div>
+        <div class="text-card">
+          <h3>{{ jogo.titulo }}</h3>
+          <div class="desc">
+            <span class="categoria">{{ jogo.categoria }}</span>
+            <span class="categoria">{{ jogo.tamanho }}</span>
+            <span class="categoria">{{ jogo.plataforma }}</span>
+          </div>
+        </div>
+      </div>
+</div>
+
+<mat-paginator [pageSize]="pageSize" [pageIndex]="pageIndex" [length]="dadosDosCartoes.length" (page)="paginaAlterada($event)"></mat-paginator>
